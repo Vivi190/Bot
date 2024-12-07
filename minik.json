@@ -1,0 +1,155 @@
+{
+    "botSettings": {
+        "token": "MTMxNDY5MDExMDI2NDA1MzgxMQ.GvarzR.Jp2AqezaG4nGrULstvBR4jwmWLojfx8TKjH3eU",
+        "ServerID": "1314691498763223172",
+        "clientID": "1314690110264053811",
+        "durum": "online",
+        "oynuyor": "KEEPERS"
+    },
+
+        "rol": {
+            "kayıtlı": "1314693593440587896",
+            "kayıtsız": "1314693606220632114",
+            "inaktif": "İNAKTİF ROLÜ",
+            "yonetici": "1314693578890416149"
+        },
+
+
+        "kanal": {
+            "welcome": "1314693846332080149",
+            "kurallar": "1314693898232270868",
+            "duyurular": "1314693905610182837",
+            "hatakanali": "1314693860059779205",
+            
+            "chat": "1314693958114218066",
+            "ozelodakategori": "1314693670078775336",
+            "ozeloda": "1314695279458521169"
+        },
+
+        "leaderboard": {
+            "farm": "1314693958114218066",
+            "mesai": "1314693958114218066"
+        },
+
+
+
+    "mesai": {
+
+        "ekip": {
+            "photograph": "https://cdn.discordapp.com/icons/1256739211491672148/50aacec08d18d7361cb9910d52cb6d81.webp?size=1024&format=webp&width=460&height=460"
+        },
+
+        "menuayarlari": {
+            "mesaj": " Alttaki menüden mesaiye girebilirsiniz. \n\n```Mesaiye girdikten 2 saat sonra kontrol için bildirim alacaksınız. ``` \n\n> __Mesai kontrolü başarısız olanlara yaptırım uygulanacaktır..__ ",
+            "menuplaceholder": " Mesai işlemleri için tıklayınız..",
+            "birseceneklabel": "Mesai'ye gir",
+            "birsecenekemoji": "1264482776208506971",
+            "birsecenekaciklama": "Mesaiye girmeniz için seçmeniz gereken seçenek.",
+            "ikiseceneklabel": "Mesai kontrol",
+            "ikisecenekemoji": "1264482774434320455",
+            "ikisecenekaciklama": "Mesai kontrol etmek için seçmeniz gereken seçenek.",
+            "ucseceneklabel": "Mesai çıkış",
+            "ucsecenekemoji": "1264482777739300874",
+            "ucsecenekaciklama": "mesaiden çıkmanız için seçmeniz gereken seçenek.",
+            "dortseceneklabel": "Tüm Mesailerim",
+            "dortsecenekemoji": "1264482782994890763",
+            "dortsecenekaciklama": "Şuan'a kadar yaptığınız tüm mesailer"
+            
+        },
+
+        "yetkilimenuayarlari": {
+            "mesaj": " **Alttaki menüden memurları yönetebilirsiniz.** \n\n```Memurların her türlü kontrolünü buradan yapabilirsiniz.``` \n\n> __Yaptığınız şeyler kişilerin mesaisini etkiler.__ ",
+            "menuplaceholder": " Memurları Yönetmek için tıklayınız..",
+            "birseceneklabel": "Memuru Mesai'ye sok",
+            "birsecenekemoji": "1264482776208506971",
+            "birsecenekaciklama": "Memurları zorla mesaiye sokarsınız.",
+            "ikiseceneklabel": "Memur Mesai kontrol'ü",
+            "ikisecenekemoji": "1264482774434320455",
+            "ikisecenekaciklama": "Memurların mesailerini kontrol edersiniz.",
+            "ucseceneklabel": "Memur Mesaiden çıkart",
+            "ucsecenekemoji": "1264482777739300874",
+            "ucsecenekaciklama": "mesaiden çıkmanız için seçmeniz gereken seçenek.",
+            "dortseceneklabel": "Mesaideki memurları gör.",
+            "dortsecenekemoji": "1264482782994890763",
+            "dortsecenekaciklama": "Aktif mesaideki tüm memurları görüsünüz.",
+            "besseceneklabel": "Memurun tüm mesailerini gör.",
+            "bessecenekemoji": "1264482782994890763",
+            "bessecenekaciklama": "ID'sını girdiğiniz memurun tüm mesailerini görürsünüz."
+        }
+    },
+
+    "farm": {
+        
+        "menuayarlari": {
+            "mesaj": " **Alttaki menüden Farmlarınızı kontrol edebilirsiniz.** \n\n```Farmlarınızın kontrol altında olduğunu unutmayın.``` \n\n> __Yaptığınız şeyler kayıt altındadır.__ ",
+            "menuplaceholder": " Farm menüsü için tıklayın.",
+
+            "birseceneklabel": "Farm kontrol et",
+            "birsecenekemoji": "1264482774434320455",
+            "birsecenekaciklama": "Farmlarını kontrol edersiniz.",
+
+            "ikiseceneklabel": "Son farm",
+            "ikisecenekemoji": "1264482777739300874",
+            "ikisecenekaciklama": "En son ne eklemişsin onu kontrol edersin."
+        },
+        "farmlar": {
+            "Otlabel": "Ot ekle",
+            "otemoji": "1265926905492930561",
+            "otaciklama": "Database'e ot kayıt et.",
+            "kokainlabel": "Kokain ekle",
+            "kokainemoji": "1265926602127179876",
+            "kokainaciklama": "Database'e kokain kayıt et.",
+            "methlabel": "Meth ekle",
+            "methemoji": "1265926568145059913",
+            "methaciklama": "Database'e meth kayıt et.",
+            "karaparalabel": "Karapara ekle",
+            "karaparaemoji": "1265926534061883423",
+            "karaparaaciklama": "Database'e karapara kayıt et."
+        },
+        "yetkilimenuayarlari": {
+            "mesaj": " **Alttaki menüden Farmları yönetebilirsiniz.** \n\n```Ekibinizdeki kullanıcıların farmlarını buradan yönetebilirsiniz.``` \n\n> __Yaptığınız şeyler kişilerin farmını etkiler.__ ",
+            "menuplaceholder": " Farmları Yönetmek için tıklayınız..",
+            "birseceneklabel": "Database'e farm ekle",
+            "birsecenekemoji": "1264482776208506971",
+            "birsecenekaciklama": "Belirli bir kişinin database'ine farm eklersiniz",
+            "ikiseceneklabel": "Database'e bak.",
+            "ikisecenekemoji": "1264482774434320455",
+            "ikisecenekaciklama": "Belirli bir kişinin database'ine bakarsınız.",
+            "ucseceneklabel": "Database'den farm sil.",
+            "ucsecenekemoji": "1264482777739300874",
+            "ucsecenekaciklama": "Belirli bir kişinin database'inden farm silersiniz.",
+            "dortseceneklabel": "Tüm Database",
+            "dortsecenekemoji": "1264482777739300874",
+            "dortsecenekaciklama": "Tüm database'i görürsünüz."
+        
+        }
+    },
+
+
+    "reklam": {
+        "minikprofillink": "https://discord.com/users/205638637080150016",
+        "minikdcid": "205638637080150016",
+        "minikisim": "Militan.",
+        "minikprofile": "https://cdn.discordapp.com/avatars/205638637080150016/a_53657df5c4797f31e2f7b61ef2f84374.gif?size=1024",
+        "fordevelopment": "ttps://discord.gg/1742",
+        "embedphoto": "https://media.discordapp.net/attachments/1238638628109025360/1243243537626038332/Adsz.png?ex=6650c445&is=664f72c5&hm=0ae4db728c7120438f0b4f3eb5c1b4da5520d268be3ea7a7ede93ecee9e183a7&=&format=webp&quality=lossless&width=1019&height=6"
+        },
+    
+    "basvuru": {
+        "birincisoru": "Kendinizi tanıtın",
+        "birincisoruplace": "isim - yaş - il",
+        "ikincisoru": "Hangi sunucularda oynadın?",
+        "ikincisorusoruplace": "Hangi sunucularda rol yaptın?",
+        "ucuncusoru": "Fivemde kaç saatiniz var?",
+        "ucuncusoruplace": "Teste tabi tutulucaksınız. ona göre doldurun.",
+        "dorduncusoru": "Bize ne katabilirsiniz??",
+        "dorduncusoruplace": "Düşüncelerinizi yazınız.",
+        "besincisoru": "Destek odasında kavga",
+        "besincisoruplace": "Destek odasına giriş yaptığınızda kavga olduğunu farkettiniz. Ne yaparsınız?"
+    },
+
+    "log": {
+        "rolguncelleme": true
+    }
+
+ }
