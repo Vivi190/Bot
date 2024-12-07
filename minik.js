@@ -48,7 +48,8 @@ client
 
 
     // Mongo DB 
-    const mongoose = require('mongoose');
+    const mongoose = require('mongoose');;
+    const { Room, User, Guild } = require('./models/database');
 
     mongoose.connect('mongodb://localhost:27017/BotDatabase', {
         useNewUrlParser: true,
