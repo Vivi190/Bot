@@ -1,45 +1,35 @@
-const mongoose = require('mongoose');
+const Database = require('better-sqlite3');
+const db = new Database('database.sqlite');
 
-// MongoDB bağlantısını yap
-mongoose.connect('mongodb://localhost:27017/keepersbot', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => console.log('MongoDB bağlantısı başarılı!'))
-  .catch(err => console.error('MongoDB bağlantı hatası:', err));
-
-// Otlar için bir şema oluştur
-const otSchema = new mongoose.Schema({
-    userId: { type: String, required: true, unique: true },
-    miktar: { type: Number, default: 0 },
-});
-
-// Modeli oluştur
-const Ot = mongoose.model('Ot', otSchema);
+db.exec(`
+    CREATE TABLE IF NOT EXISTS otlar (
+        userId TEXT PRIMARY KEY,
+        miktar INTEGER DEFAULT 0
+    )
+`);
 
 const dbOperations = {
-    getOt: async (userId) => {
-        let ot = await Ot.findOne({ userId });
-        if (!ot) {
-            ot = new Ot({ userId, miktar: 0 });
-            await ot.save();
-        }
-        return ot;
+    getOt: (userId) => {
+        const row = db.prepare('SELECT * FROM otlar WHERE userId = ?').get(userId);
+        return row || { userId, miktar: 0 };
     },
 
-    setOt: async (userId, miktar) => {
-        await Ot.findOneAndUpdate({ userId }, { miktar }, { upsert: true });
+    setOt: (userId, miktar) => {
+        const stmt = db.prepare('INSERT OR REPLACE INTO otlar (userId, miktar) VALUES (?, ?)');
+        stmt.run(userId, miktar);
     },
 
-    addOt: async (userId, miktar) => {
-        const ot = await dbOperations.getOt(userId);
-        ot.miktar += miktar;
-        await ot.save();
-        return ot.miktar;
+    addOt: (userId, miktar) => {
+        const currentOt = dbOperations.getOt(userId);
+        const newMiktar = currentOt.miktar + miktar;
+        dbOperations.setOt(userId, newMiktar);
+        return newMiktar;
     },
 
-    getAllOt: async () => {
-        return await Ot.find({});
-    },
+    getAllOt: () => {
+        const stmt = db.prepare('SELECT * FROM otlar');
+        return stmt.all();
+    }
 };
 
 module.exports = dbOperations;
